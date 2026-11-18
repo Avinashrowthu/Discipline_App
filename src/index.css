@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, "Segoe UI", system-ui, sans-serif;
+  color: #17243b;
+  background: #f6f3ed;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --bg: #f6f3ed;
+  --surface: #ffffff;
+  --soft: #eeeae1;
+  --text: #17243b;
+  --muted: #778092;
+  --border: #e5e1d8;
+  --action: #d77b36;
+  --success: #27845d;
+  --danger: #c34e4e;
+}
+:root[data-theme="dark"] {
+  color: #edf1f7;
+  background: #101827;
+  --bg: #101827;
+  --surface: #182337;
+  --soft: #222f45;
+  --text: #edf1f7;
+  --muted: #a2aec0;
+  --border: #2b3850;
+  --action: #f09a56;
+  --success: #58c18f;
+  --danger: #e06c6c;
+}
+* { box-sizing: border-box; }
+html, body, #root { min-height: 100%; }
+body { margin: 0; min-width: 320px; background: var(--bg); color: var(--text); transition: background .25s, color .25s; }
+button, input, select { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
